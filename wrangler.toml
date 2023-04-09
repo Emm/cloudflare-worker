@@ -1,0 +1,9 @@
+name = "project"
+workers_dev = true
+compatibility_date = "2022-07-12"
+main = "build/worker/shim.mjs"
+
+[build]
+command = "cargo install -q worker-build && worker-build --release" # required
+watch_dir = "src"
+
